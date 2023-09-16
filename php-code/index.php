@@ -1,9 +1,5 @@
 <?php
-    class Meme
-    {
-        private $name;
 
-    }
 ?>
 
 <!DOCTYPE html>
