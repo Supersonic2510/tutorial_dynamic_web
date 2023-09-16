@@ -1,6 +1,6 @@
 # Learning PHP, MySQL & JavaScript - 6th Edition
 
-![Book Cover](book_cover.jpg)
+![Book Cover](book.jpeg)
 
 **Book Information:**
 - Title: Learning PHP, MySQL & JavaScript - 6th Edition
