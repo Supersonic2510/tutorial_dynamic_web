@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  php-apache:
+    image: php:apache
+    ports:
+      - "80:80"
+    volumes:
+      - ./php-code:/var/www/html
+    depends_on:
+      - mariadb
+
+  mariadb:
+    image: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: toor
+      MYSQL_DATABASE: tutorial_database
+      MYSQL_USER: root
+      MYSQL_PASSWORD: toor
+    ports:
+      - "3306:3306"
+
+  nodejs:
+    image: node:latest
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./nodejs-code:/app
